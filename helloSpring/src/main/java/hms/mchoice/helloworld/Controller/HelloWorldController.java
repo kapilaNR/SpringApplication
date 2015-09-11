@@ -31,12 +31,6 @@ public class HelloWorldController {
     @RequestMapping(value ="/welcome",method = RequestMethod.GET)
     public String hello(ModelMap model){
 
-        //logs debug message
-//        if(logger.isDebugEnabled()){
-//            logger.debug("get Welcome is executed!");
-//        }
-
-        //logs exception
         logger.info("runnig welcome page");
 
         model.addAttribute("name", "welcome");

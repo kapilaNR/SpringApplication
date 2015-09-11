@@ -39,7 +39,7 @@ public class UserValidator implements Validator {
             Integer.parseInt(userBeans.getAge());
 
         } catch (NumberFormatException e) {
-            logger.error("age wrong found");
+            logger.warn("age wrong found");
             errors.rejectValue("age", "age.wrong");
         }
 

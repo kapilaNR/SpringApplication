@@ -26,6 +26,12 @@
         </layout>
     </appender>
 
+
+    <logger name="org.springframework">
+        <level value="error"/>
+    </logger>
+
+
     <root>
         <level value="TRACE" />
         <appender-ref ref="trace" />

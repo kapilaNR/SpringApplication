@@ -21,7 +21,6 @@ public class Service {
         user.setMiddleName(userBeans.getMiddleName());
         user.setAge(Integer.parseInt(userBeans.getAge()));
         user.setUserId(Long.parseLong(userBeans.getUserId()));
-
     }
 
     public List<User> findAll(){
@@ -35,5 +34,4 @@ public class Service {
     public List<User> findUser(String name){
         return userRepository.findUser(name);
     }
-
 }
